@@ -1,0 +1,42 @@
+@mixin playfair-400 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin playfair-700 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin gilroy-300 {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 300;
+}
+@mixin gilroy-400 {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+@mixin gilroy-500 {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 500;
+}
+@mixin gilroy-600 {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin gilroy-700 {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin gilroy-900 {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 900;
+}

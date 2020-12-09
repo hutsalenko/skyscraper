@@ -1,0 +1,174 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+
+  &__wraper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.29);
+    padding: 15.4rem 8.3rem 9.2rem 16.4rem;
+
+    @media (max-width: 1334px) {
+      padding: 13rem 8rem 8rem 13rem;
+    }
+
+    @media (max-width: 1100px) {
+      padding: 11rem 7rem 7rem 11rem;
+    }
+
+    @media (max-width: 975px) {
+      padding: 9rem 6rem 6rem 9rem;
+    }
+
+    @media (max-width: 700px) {
+      padding: 2em 1rem 1rem 2em;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (max-width: 500px) {
+      padding: 5rem 4rem 4rem 5rem;
+    }
+
+    &--about {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 15rem;
+
+      @media (max-width: 1430px) {
+        margin-right: 0rem;
+      }
+
+      @media (max-width: 800px) {
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
+      &-logo {
+        @include gilroy-900;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        color: $color-text;
+        text-decoration: none;
+        margin-bottom: 2rem;
+      }
+
+      &-desc {
+        @include gilroy-300;
+        font-size: 1.6rem;
+        color: $main-text;
+        line-height: 2.5rem;
+        width: 30.8rem;
+
+        @media (max-width: 400px) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &--links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 22.3rem;
+      width: 10.5rem;
+
+      @media (max-width: 1430px) {
+        margin-right: 0rem;
+      }
+
+      @media (max-width: 800px) {
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
+      a {
+        @include gilroy-400;
+        font-size: 1.6rem;
+        color: $main-text;
+        line-height: 1.9rem;
+        text-decoration: none;
+
+        &:not(:last-child) {
+          margin-bottom: 2.3rem;
+        }
+      }
+    }
+
+    &--location {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 12.9rem;
+      margin-right: 26.4rem;
+
+      @media (max-width: 1430px) {
+        margin-right: 0rem;
+      }
+
+      @media (max-width: 800px) {
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
+      &-address {
+        @include gilroy-400;
+        font-size: 1.6rem;
+        color: $main-text;
+        line-height: 1.9rem;
+        margin-bottom: 4.7rem;
+      }
+
+      &-number {
+        @include gilroy-400;
+        font-size: 1.6rem;
+        color: $main-text;
+        line-height: 1.9rem;
+      }
+    }
+
+    &--socials {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 800px) {
+        flex-direction: row;
+      }
+
+      a {
+        text-decoration: none;
+
+        &:not(:last-child) {
+          margin-bottom: 2.1rem;
+
+          @media (max-width: 800px) {
+            margin-bottom: 0;
+            margin-right: 2.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__rights {
+    @include gilroy-400;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.29);
+    padding: 1.4rem 8.3rem 1.8rem 16.4rem;
+
+    @media (max-width: 800px) {
+      text-align: center;
+      padding: 1.4rem 8rem 1.8rem 8rem;
+    }
+  }
+}
